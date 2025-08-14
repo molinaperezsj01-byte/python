@@ -39,7 +39,7 @@ ciudad = input("ingrese su ciudad de nacimiento: ")
 
 tupla = (nombre, edad, ciudad)
 
-print(f"hola {nombre} tienes {edad} años y naciste en {ciudad}")
+print(f"hola {tupla[0]} tienes {tupla[1]} años y naciste en {tupla[2]}")
 
 
 agenda = {
