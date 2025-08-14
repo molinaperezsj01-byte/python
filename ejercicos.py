@@ -2,17 +2,14 @@ precio = float(input("\ningrese la cuenta: "))
 precio_y_propina = precio * 115/100
 print(f"cuenta mas la propina: {precio_y_propina}")
 
-
 nombre = input("\ningrese su nombre: ")
 edad = int(input("ingrese su edad: "))
 ciudad = input("ingrese se ciudad: ")
 print(f"hola,{nombre} tienes {edad} años y vives en {ciudad}")
 
-
 celsius = float(input("\ningrese temperatura grado celsius: "))
 fahrenheit = (celsius * 9/5) + 32
 print(f"{celsius}ºC son {fahrenheit}ºF\n")
-
 
 nacimiento = int(input("ingrese su fecha de nacimiento: "))
 
@@ -86,3 +83,32 @@ if año % 4 == 0 and año % 100 != 0 or año % 400 == 0:
     print(f"el año {año} es un año biciesto")
 else:
     print(f"el año {año} no es un año biciesto")
+
+#ejercicios avanzados
+
+numeros = [4, 2, 7, 9, 8]
+suma = 0
+for i in numeros:
+    suma += i
+print(f"la suma de {numeros} es {suma}")
+
+numero = 3
+intentos = 0
+print("intenta adivinar el numero con 7 intentos")
+while intentos < 7:
+    print(f"intentos {intentos}")
+    adivinar = int(input("adivina el numero: "))
+    intentos += 1
+
+    if adivinar < numero:
+        print("tu numero es demasiado bajo")
+    elif adivinar > numero:
+        print("tu numero es demasiado alto")
+    else:
+        break
+
+if adivinar == numero:
+    print(f"felicidades adivinaste el numero {numero}")
+
+else:
+    print(f"has perdido el numero era {numero}")
